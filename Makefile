@@ -1,4 +1,4 @@
-all: uebermake
+all: uebermake umtests
 
 uebermake.o: uebermake.cpp
 	g++ -g -c uebermake.cpp
