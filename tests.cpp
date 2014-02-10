@@ -8,13 +8,13 @@ TEST(Case,Name)
 
 TEST(Parser,SimpleRuleIsParsedCorrectly)
 {
-	string rule = "a: b";
+	string rule = "arule: b";
        	istringstream  istr(rule);
        
 	Parser p(istr);
         vector<Target> targets = p.parse();
 
-	EXPECT_STREQ(targets[0].name.c_str(),"a");
+	EXPECT_STREQ(targets[0].name.c_str(),"arule");
 	EXPECT_STREQ(targets[0].dep_string.c_str(),"b");
 }
 

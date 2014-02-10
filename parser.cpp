@@ -35,8 +35,8 @@ vector<Target> Parser::parse()
 		getline (inputStream,line);
 
 		Target         t;
-
-		if (int pos = line.find(":") != string::npos)
+                int pos = line.find(":"); 
+		if (pos != string::npos)
 		{
 			t.name = line.substr(0,pos);
 			string dep = line.substr(pos+1);
