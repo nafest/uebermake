@@ -8,6 +8,7 @@ using namespace std;
 
 class Target
 {
+public:
   string  name;
   string  rule;
   string  dep_string;
